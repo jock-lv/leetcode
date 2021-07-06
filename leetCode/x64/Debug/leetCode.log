@@ -1,0 +1,3 @@
+﻿  test.cpp
+E:\MyData\CplusPro\leetCode\leetCode\test.cpp(68,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  leetCode.vcxproj -> E:\MyData\CplusPro\leetCode\x64\Debug\leetCode.exe
