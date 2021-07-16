@@ -4,6 +4,7 @@
 #include<set>
 #include<algorithm>
 #include<stack>
+#include<map>
 #include"Soulation.h"
 using namespace std;
 
@@ -112,10 +113,40 @@ int quick(int x, long long n) {
 	}
 	return ret % mod;
 }
+//1. 两数之和
+vector<int> twoSum(vector<int>& nums, int target) {
+	vector<int> a(2, -1);
+	map<int, int> num;
+	for (int i = 0; i < nums.size(); i++) {
+		if (num.count(target - nums[i]) > 0) {
+			a[0] = num[target - nums[i]];
+			a[1] = i;
+			break;
+		}
+		num[nums[i]] = i;
+	}
+	return a;
+}
+
+vector<vector<int>> matrixReshape(vector<vector<int>>& mat, int r, int c) {
+	int r_mat = mat.size(), c_mat = mat[0].size();
+	if (r_mat * c_mat == r * c) {
+		vector<vector<int>> ret(r, vector<int>(c, 0));
+		int num = 0;
+		for (int i = 0; i < r_mat; ++i) {
+			for (int j = 0; j < c_mat; ++j) {
+				ret[int(num / c)][int(num % c)] = mat[i][j];
+				++num;
+			}
+		}
+		return ret;
+	}
+	return mat;
+}
 
 int main() {
-	int n = 10;
-	double x = 2.0;
-	cout <<quick(x, n)<< endl;
-	return 0;
+	char a[2];
+	a[0] = 66;
+	cout << (a[0] == 'C') << endl;
+	return 0; 
 }

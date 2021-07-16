@@ -1,3 +1,6 @@
 ﻿  test.cpp
-E:\MyData\CplusPro\leetCode\leetCode\test.cpp(68,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyData\CplusPro\leetCode\leetCode\test.cpp(69,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyData\CplusPro\leetCode\leetCode\test.cpp(99,14): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
+E:\MyData\CplusPro\leetCode\leetCode\test.cpp(132,24): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyData\CplusPro\leetCode\leetCode\test.cpp(132,47): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   leetCode.vcxproj -> E:\MyData\CplusPro\leetCode\x64\Debug\leetCode.exe
